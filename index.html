@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            color: #b3b3b3;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .phone-illustration {
+            width: 300px;
+            height: 600px;
+            margin: 3rem auto;
+            position: relative;
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: transform 0.3s ease;
+        }
+
+        .phone-illustration:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .phone-body {
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+            border-radius: 40px;
+            border: 12px solid #2a2a2a;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            opacity: 0.15;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .notch {
+            width: 50%;
+            height: 25px;
+            background: #2a2a2a;
+            position: absolute;
+            top: 0;
+            left: 25%;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feature {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .feature h3 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .privacy-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .privacy-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Engn</h1>
+        <p>Your personal AI-powered running companion, coming soon to transform your training experience.</p>
+        <div class="phone-illustration">
+            <div class="phone-body">
+                <div class="notch"></div>
+                <div class="phone-screen"></div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h3>AI-Powered Training</h3>
+                <p>Get personalized running plans and real-time feedback powered by advanced AI algorithms.</p>
+            </div>
+            <div class="feature">
+                <h3>Progress Tracking</h3>
+                <p>Monitor your improvements with detailed analytics and performance metrics.</p>
+            </div>
+            <div class="feature">
+                <h3>Smart Coaching</h3>
+                <p>Receive intelligent guidance and motivation tailored to your fitness level and goals.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+    </footer>
+</body>
+</html> 
